@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 定义数组的两种方法
+        // var aArray=new Array(1,2,3);
+        // console.log(aArray);
+        var aArray=[1,2,3];
+
+        // 根据下标获取值(不支持负数下标)
+        alert(aArray[0]);
+        // 根据下标修改值
+        aArray[0]=4;
+        // 获取数组长度
+        alert(aArray.length);
+        // 追加数据
+        aArray.push("sf");
+        console.log(aArray);
+        // 删除数据(pop不支持根据下标删除)
+        aArray.pop();
+        console.log(aArray);
+        // 删除指定数据
+        aArray.splice(3,1)
+        console.log(aArray);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

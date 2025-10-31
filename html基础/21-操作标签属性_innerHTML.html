@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 等待我们的页面数据加载完毕后触发onload事件
+        window.onload=function(){
+            var oDiv=document.getElementById("mydiv")
+            // 获取标签中的内容
+            alert(oDiv.innerHTML);
+            oDiv.innerHTML="我是萝莉控"
+            
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mydiv">宋封</div>
+</body>
+</html>

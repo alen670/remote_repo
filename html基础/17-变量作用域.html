@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 局部变量
+        // function fnShow(){
+        //     var iNum=10;
+        //     alert(iNum);
+        // }
+        // fnShow();
+        // alert(iNum);
+
+        // 全局变量
+        var iNum=10;
+        function fnShow(){
+            // js中字符串类型可以和数字类型直接相加,数字会自动转化为字符串类型
+            alert("全局变量"+iNum);
+        }
+        fnShow();
+        alert(iNum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

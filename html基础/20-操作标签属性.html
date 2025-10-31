@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mybtn{
+            width: 100px;
+            height:100px;
+            background:green;
+        }
+    </style>
+
+    <script>      
+        function fnLoad()
+        {
+            var oBtn=document.getElementById("btn");  //通过内置方法获取对应id的标签
+            // // 修改属性
+            oBtn.value="大傻逼"
+            // oBtn.style.background="red";
+            // // alert(oBtn.value)
+            oBtn.className="mybtn";
+        }
+    </script>  
+</head>
+<body>
+    <input type="button" value="宋封" id="btn" onclick="fnLoad()">
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>      
+        // onload事件:页面数据加载完毕后触发
+        // windows.onload= function()
+        // {
+        //     var oBtn=document.getElementById("btn");  //通过内置方法获取对应id的标签
+        //     alert(oBtn);
+        // }
+        function fnLoad()
+        {
+            var oBtn=document.getElementById("btn");  //通过内置方法获取对应id的标签
+            alert(oBtn);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="按钮" id="btn" onclick="fnLoad()">
+</body>
+</html>

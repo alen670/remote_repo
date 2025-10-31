@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    label:文字标注
+    select:表单元素的下拉列表标签
+    textarea:定义多行文本输入框
+    input:选择输入数据方式
+        text:单行文本输入框
+        password:密码输入框
+        radio:单选框
+        checkbox:复选框
+        file:上传文件
+        submit:定义提交按钮
+        reset:定义重置按钮
+        button:定义一个普通按钮
+
+    表单属性设置:
+        action:是设置表单数据提交地址
+        method:表单提交方式(GET,POST)
+    表单元素属性设置:
+        name:提交数据时的参数名
+        value:用于作为提交表单数据时参数名对应的值
+    -->
+    <form action="https://www.baidu.com" method="POST">
+        <label>name:</label>
+        <input type="text" name="username">
+        <br>
+        <label>password:</label>
+        <input type="password" name="password">
+        <br>
+        <label>gender:</label>
+        <input type="radio" name="sex" value="1">man
+        <input type="radio" name="sex" value="0">woman
+        <br>
+        <label>hobby:</label>
+        <input type="checkbox" name="hobby" value="eat">eat
+        <input type="checkbox" name="like" value="sleep">sleep
+        <input type="checkbox" name="like" value="paly">play game
+        <br>
+        <label>photo:</label>
+        <input type="file" name="pic">
+        <br>
+        <br>
+        <label>introduce:</label>
+        <textarea name="introduce"></textarea>
+        <br>
+        <br>
+        <label>address:</label>
+        <select name="addr">
+            <option value="1">UK</option>
+            <option value="2">USA</option>
+            <option value="3">Japan</option>
+            <option value="4">China</option>
+        </select>
+        <br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="button">
+    </form>
+</body>
+</html>
