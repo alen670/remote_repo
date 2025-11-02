@@ -131,4 +131,24 @@ git commit -m "您的描述"
 git push origin main
 ```
 
-这就是您日常同步需要的全部操作！有什么问题随时问我。
+
+==不同本地的操作不同步时==:
+
+方案一:
+- 放弃本地修改，使用远程版本
+git checkout -- os/操作系统的概念.md
+
+- 拉取远程更新
+git pull origin main
+
+方案二：提交本地修改后再合并（推荐）
+
+- 添加并提交您的本地修改
+git add os/操作系统的概念.md
+git commit -m "在Mac上更新操作系统概念笔记"
+
+- 现在可以安全拉取远程更新
+git pull origin main
+
+- 如果有冲突，手动解决后推送
+git push origin main
