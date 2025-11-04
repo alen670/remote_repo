@@ -11,7 +11,7 @@ git add .
 # 2. 提交更改并添加描述
 git commit -m "描述您所做的修改内容"
 
-# 3. 推送到GitHub远程仓库
+# 3. 推送到GitHub远程仓库gu
 git push origin main
 ```
 
